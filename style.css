@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --primary-color: #002379;
+  --secondary-color: #ff9f66;
+  --light-color: rgba(105, 145, 224, 0.555);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  /* color: var(--primary-color); */
+  text-align: center;
+  border: none;
+  background: rgba(41, 102, 223, 0.37);
+  border-radius: 10px;
+  color: white;
+}
+
+#app {
+  background-color: cornflowerblue;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 6px 8px 17px 0px;
+}
+
+.input-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+/* test code */
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.check input {
+  height: 20px;
+  width: 20px;
+}
+#task-input {
+  height: 50px;
+  width: 75%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#task-input:focus{
+  outline: none;
+}
+
+#add-task-button {
+  height: 50px;
+  width: 25%;
+  margin-left: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgb(41, 101, 223);
+  font-size: 14px;
+  font-weight: 450;
+  color: #fff;
+  cursor: pointer;
+}
+
+#task-list {
+  list-style: none;
+  margin-top: 10px;
+  border: 1px solid rgba(41, 102, 223, 0.37);
+  border-radius: 10px;
+}
+
+#task-list li {
+  padding: 10px;
+  background-color: rgba(41, 102, 223, 0.37);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* New styles for the button container */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 8px; Adjust the gap as needed */
+}
+
+#edit-button {
+  margin-left: 8px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  /* background: rgba(34, 222, 255, 0.603); */
+  background: #2ecc71;
+  font-size: 14px;
+  font-weight: 450;
+  color: #fff;
+  cursor: pointer;
+}
+
+#delete-button {
+  margin-left: 8px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: rgb(240, 66, 66);
+  font-size: 14px;
+  font-weight: 450;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-left: 10px; */
+  border: 1px solid rgba(41, 102, 223, 0.37);
+  border-radius: 10px;
+  padding: 7px;
+}
+
+.footer #remaining-task {
+  color: #fff;
+}
+.footer #remaining-task #remaining-task-counter {
+  color: var(--primary-color);
+}
+
+#clear-button {
+  margin-right: 10px;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  border-radius: 10px;
+  background: #dfb81dfa;
+  font-size: 14px;
+  font-weight: 450;
+  color: #fff;
+  cursor: pointer;
+}
+
+#clear-button:hover {
+  /* padding: 50px; */
+}
